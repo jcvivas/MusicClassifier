@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Classifier</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Music Classifier</h1>
+        <form id="upload-form">
+            <label for="audio-file">Selecciona un archivo de audio:</label>
+            <input type="file" id="audio-file" accept="audio/*" required />
+            <audio id="audio-player" class="hidden" controls></audio>
+            <button type="submit">Clasificar</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Resultado</h2>
+            <p id="classification">Procesando...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
